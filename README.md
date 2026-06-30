@@ -1,5 +1,7 @@
 # Image Search by Text Description
 
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 Comparative analysis of classical and vision-language model (CLIP) approaches for semantic image retrieval. Demonstrates why joint multimodal training is essential for cross-modal retrieval tasks.
 
 ## Overview
@@ -43,7 +45,8 @@ LoRA fine-tuning (r=16, alpha=32, 10 epochs, 37K pairs) yielded only marginal im
 
 ```
 .
-├── multimodal_image_search_comparison.ipynb   # Main notebook
+├── notebooks/
+│   └── multimodal_image_search_comparison.ipynb   # Main notebook
 ├── README.md
 └── requirements.txt
 ```
@@ -52,9 +55,9 @@ LoRA fine-tuning (r=16, alpha=32, 10 epochs, 37K pairs) yielded only marginal im
 
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Open the notebook in Google Colab or Jupyter (GPU recommended)
-4. Update `PATH_TO_ZIP_FILE` and `DIRECTORY_TO_EXTRACT_TO` with your dataset paths
-5. Run all cells sequentially
+3. Open the notebook: `jupyter notebooks/multimodal_image_search_comparison.ipynb` in Google Colab or Jupyter (GPU recommended)
+5. Update `PATH_TO_ZIP_FILE` and `DIRECTORY_TO_EXTRACT_TO` with your dataset paths
+6. Run all cells sequentiallyy
 
 > **Note**: The dataset is not included in this repository due to licensing.
 
